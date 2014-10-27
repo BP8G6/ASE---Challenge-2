@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">eStore</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_show_cart">My Cart</string>
+    <string name="select_option">Select option</string>
+    
+    <string name="firstname">First Name:</string>
+    <string name="lastname">Last Name:</string>
+    <string name="address">Address:</string>
+    <string name="city">City:</string>
+    <string name="state">State:</string>
+    <string name="mobile">Mobile No:</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="confirmpassword">Confirm Password:</string>
+    <string name="signup">Register</string>
+    <string name="login">Login</string>
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<EditText
+    android:id="@+id/selectitemtext"
+    android:layout_width="260dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="15dp"
+    android:scrollbars="none"
+    android:hint="search"/>
+
+<Button android:id="@+id/search"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:text="Search"
+    android:gravity="center"
+    android:layout_marginLeft="15dp"
+    android:textColor="#FFFFFF"
+    android:background="@drawable/btnselector"
+    android:layout_alignTop="@+id/selectitemtext"
+    android:layout_toRightOf="@+id/selectitemtext"/>
+
+<ListView
+        android:id="@+id/itemlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectitemtext"
+        android:layout_alignLeft="@+id/selectitemtext"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/listitemselector">
+</ListView>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A4A4A4" >
+
+    <TextView 
+        android:id="@+id/storename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:layout_marginLeft="20dp"
+		android:text="Sample"
+		android:textStyle="bold|italic"
+		android:layout_marginTop="20dp"
+        />
+    
+    <TextView 
+        android:id="@+id/invoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/storename"
+        android:layout_alignLeft="@+id/storename"
+		android:textStyle="bold"
+        android:text="Billing Invoice"
+        android:layout_marginTop="16dp"/>
+    
+    <TextView 
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/invoice"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:text="12/23"/>
+    
+    <TextView 
+        android:id="@+id/pricetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:textStyle="italic"
+        android:layout_alignLeft="@+id/invoice"
+        android:text="Total Price: "/>
+    
+    <TextView 
+        android:id="@+id/totalpricetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pricetext"
+		android:layout_alignTop="@+id/pricetext"
+		android:layout_marginLeft="30dp"
+        android:text="$10.02"/>
+    
+    <TextView 
+        android:id="@+id/storeaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/pricetext"
+        android:layout_below="@+id/pricetext"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginTop="40dp"
+        android:text="Address:"/>
+    
+    <TextView 
+        android:id="@+id/storeinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/storeaddress"
+        android:layout_alignLeft="@+id/storeaddress"
+        android:layout_marginLeft="30dp"
+        android:textSize="15sp"
+        />
+
+    <TextView 
+        android:id="@+id/thankyoumsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/storeinfo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Thankyou"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"/>
+</RelativeLayout>

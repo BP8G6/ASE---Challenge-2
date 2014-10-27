@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2EFE64" >
+
+<TextView android:id="@+id/cartdisplaytext"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:text="The selected items"
+    android:textStyle="bold"
+    android:textSize="15sp"/>
+
+<ListView
+    android:id="@+id/selecteditemlist"
+    android:layout_width="fill_parent"
+    android:layout_height="380dp"
+    android:layout_below="@+id/cartdisplaytext"
+    android:padding="5dp"
+    android:background="@drawable/listitemselector"
+    android:scrollbars="none"/>
+
+<TextView android:id="@+id/totalbill"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/selecteditemlist"
+    android:layout_alignParentRight="true"
+    android:gravity="right"
+    android:text="Total price: $14.50"
+    android:textSize="12sp"
+    android:layout_marginRight="23dp"/>
+
+<Button android:id="@+id/checkout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/totalbill"
+    android:layout_alignParentRight="true"
+    android:gravity="center"
+    android:text="Checkout"
+    android:textColor="#FFFFFF"
+    android:background="@drawable/btnselector"
+    android:textSize="15sp"
+    android:layout_marginRight="20dp"/>
+
+
+</RelativeLayout>
